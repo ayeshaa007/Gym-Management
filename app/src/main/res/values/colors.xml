@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary_dark_green">#1B5E20</color>
+    <color name="primary_light_green">#4CAF50</color>
+    <color name="primary_darker_green">#155017</color>
+    <color name="primary_lighter_green">#43A047</color>
+    
+    <!-- Background Colors -->
+    <color name="background_gray">#F5F5F5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="card_background">#FFFFFF</color>
+    
+    <!-- Status Colors -->
+    <color name="status_active">#4CAF50</color>
+    <color name="status_active_bg">#E8F5E9</color>
+    <color name="status_expired">#D32F2F</color>
+    <color name="status_expired_bg">#FFEBEE</color>
+    <color name="status_expiring">#FF9800</color>
+    <color name="status_expiring_bg">#FFF3E0</color>
+    
+    <!-- Stat Card Colors -->
+    <color name="stat_blue">#2196F3</color>
+    <color name="stat_blue_bg">#E3F2FD</color>
+    <color name="stat_green">#4CAF50</color>
+    <color name="stat_green_bg">#E8F5E9</color>
+    <color name="stat_red">#F44336</color>
+    <color name="stat_red_bg">#FFEBEE</color>
+    <color name="stat_purple">#9C27B0</color>
+    <color name="stat_purple_bg">#F3E5F5</color>
+    <color name="stat_orange">#FF9800</color>
+    <color name="stat_orange_bg">#FFF3E0</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#9E9E9E</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_white_80">#CCFFFFFF</color>
+    
+    <!-- Other Colors -->
+    <color name="divider">#E0E0E0</color>
+    <color name="shadow">#1A000000</color>
+    <color name="overlay">#80000000</color>
+    <color name="transparent">#00000000</color>
+    
+    <!-- Payment Status Colors -->
+    <color name="payment_paid">#4CAF50</color>
+    <color name="payment_unpaid">#F44336</color>
+    
+    <!-- Button Colors -->
+    <color name="button_gray">#EEEEEE</color>
+    <color name="button_gray_pressed">#E0E0E0</color>
+</resources>

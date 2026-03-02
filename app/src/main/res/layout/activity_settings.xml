@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_gray">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient_primary"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        app:title="@string/settings"
+        app:titleTextColor="@color/text_white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Security Settings -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <!-- Section Header -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_shield"
+                            android:padding="8dp"
+                            android:background="@drawable/bg_primary_light"
+                            android:layout_marginEnd="12dp"
+                            app:tint="@color/primary_dark_green" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/security_settings"
+                            android:textSize="18sp"
+                            android:textColor="@color/text_primary"
+                            android:fontFamily="sans-serif-medium"/>
+
+                    </LinearLayout>
+
+                    <!-- Set PIN Button -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnSetPin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="0dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="16dp"
+                            android:background="@drawable/gradient_primary"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/ic_lock"
+                                android:layout_marginEnd="12dp"
+                                app:tint="@color/text_white" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/set_pin"
+                                android:textSize="16sp"
+                                android:textColor="@color/text_white"
+                                android:fontFamily="sans-serif-medium"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pin_not_set"
+                                android:textSize="12sp"
+                                android:textColor="@color/text_white_80"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Change PIN Button -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnChangePin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="0dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="16dp"
+                            android:background="@color/button_gray"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/ic_key"
+                                android:layout_marginEnd="12dp"
+                                app:tint="@color/primary_dark_green" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/change_pin"
+                                android:textSize="16sp"
+                                android:textColor="@color/text_primary"
+                                android:fontFamily="sans-serif-medium"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pin_active"
+                                android:textSize="12sp"
+                                android:textColor="@color/status_active"
+                                android:fontFamily="sans-serif-medium"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Remove PIN Button -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnRemovePin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="0dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="16dp"
+                            android:background="@color/status_expired_bg"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/ic_delete"
+                                android:layout_marginEnd="12dp"
+                                app:tint="@color/status_expired" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/remove_pin"
+                                android:textSize="16sp"
+                                android:textColor="@color/status_expired"
+                                android:fontFamily="sans-serif-medium"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Currency Settings -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <!-- Section Header -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_globe"
+                            android:padding="8dp"
+                            android:background="@drawable/bg_stat_purple"
+                            android:layout_marginEnd="12dp"
+                            app:tint="@color/stat_purple" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/currency_settings"
+                            android:textSize="18sp"
+                            android:textColor="@color/text_primary"
+                            android:fontFamily="sans-serif-medium"/>
+
+                    </LinearLayout>
+
+                    <!-- Currency Chips -->
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/chipGroupCurrency"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:singleSelection="true"
+                        app:selectionRequired="true">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipPKR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₨ PKR"
+                            android:textSize="16sp"
+                            style="@style/Widget.MaterialComponents.Chip.Choice"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipINR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ INR"
+                            android:textSize="16sp"
+                            style="@style/Widget.MaterialComponents.Chip.Choice"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipUSD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$ USD"
+                            android:textSize="16sp"
+                            style="@style/Widget.MaterialComponents.Chip.Choice"/>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipAED"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="د.إ AED"
+                            android:textSize="16sp"
+                            style="@style/Widget.MaterialComponents.Chip.Choice"/>
+
+                    </com.google.android.material.chip.ChipGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

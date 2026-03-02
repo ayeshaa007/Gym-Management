@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_gray">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_primary"
+        android:padding="24dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_pin"
+            style="@style/HeaderText"/>
+    </LinearLayout>
+
+    <!-- PIN Entry Area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+        <!-- Lock Icon -->
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_lock"
+            android:layout_marginBottom="32dp"
+            app:tint="@color/primary_dark_green" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_4_digit_pin"
+            android:textSize="16sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- PIN Dots -->
+        <LinearLayout
+            android:id="@+id/pinDotsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="48dp">
+
+            <TextView
+                android:id="@+id/pinDot1"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/pin_dot_empty"/>
+
+            <TextView
+                android:id="@+id/pinDot2"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/pin_dot_empty"/>
+
+            <TextView
+                android:id="@+id/pinDot3"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/pin_dot_empty"/>
+
+            <TextView
+                android:id="@+id/pinDot4"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/pin_dot_empty"/>
+        </LinearLayout>
+
+        <!-- Keypad -->
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="3"
+            android:rowCount="4">
+
+            <!-- Row 1 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn1"
+                style="@style/PinButton"
+                android:text="1"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn2"
+                style="@style/PinButton"
+                android:text="2"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn3"
+                style="@style/PinButton"
+                android:text="3"/>
+
+            <!-- Row 2 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn4"
+                style="@style/PinButton"
+                android:text="4"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn5"
+                style="@style/PinButton"
+                android:text="5"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn6"
+                style="@style/PinButton"
+                android:text="6"/>
+
+            <!-- Row 3 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn7"
+                style="@style/PinButton"
+                android:text="7"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn8"
+                style="@style/PinButton"
+                android:text="8"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn9"
+                style="@style/PinButton"
+                android:text="9"/>
+
+            <!-- Row 4 -->
+            <View
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="8dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn0"
+                style="@style/PinButton"
+                android:text="0"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDelete"
+                style="@style/PinButton"
+                android:text="⌫"
+                app:backgroundTint="@color/stat_red"/>
+        </GridLayout>
+    </LinearLayout>
+</LinearLayout>

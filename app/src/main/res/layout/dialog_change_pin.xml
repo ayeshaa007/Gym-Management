@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        style="@style/TextInputStyle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etOldPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/old_pin"
+            android:inputType="numberPassword"
+            android:maxLength="4"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        style="@style/TextInputStyle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNewPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/new_pin"
+            android:inputType="numberPassword"
+            android:maxLength="4"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextInputStyle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etConfirmPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirm_pin"
+            android:inputType="numberPassword"
+            android:maxLength="4"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

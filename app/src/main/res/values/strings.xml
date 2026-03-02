@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GymFlow</string>
+    <string name="gym_management">Gym Management System</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard">Dashboard</string>
+    <string name="total_members">Total Members</string>
+    <string name="active_members">Active Members</string>
+    <string name="expired_members">Expired Members</string>
+    <string name="total_revenue">Total Revenue</string>
+    <string name="expiring_soon">Expiring Soon</string>
+    <string name="within_3_days">(Within 3 days)</string>
+    <string name="add_new_member">Add New Member</string>
+    <string name="register_new_gym_member">Register a new gym member</string>
+    <string name="view_all_members">View All Members</string>
+    <string name="manage_member_records">Manage member records</string>
+
+    <!-- Add/Edit Member -->
+    <string name="add_member">Add New Member</string>
+    <string name="edit_member">Edit Member</string>
+    <string name="update_member_info">Update member information</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="join_date">Join Date</string>
+    <string name="membership_plan">Membership Plan</string>
+    <string name="fee_amount">Fee Amount</string>
+    <string name="payment_status">Payment Status</string>
+    <string name="paid">Paid</string>
+    <string name="unpaid">Unpaid</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="one_month">1 Month</string>
+    <string name="three_months">3 Months</string>
+    <string name="six_months">6 Months</string>
+
+    <!-- Member List -->
+    <string name="all_members">All Members</string>
+    <string name="members_found">member(s) found</string>
+    <string name="search_hint">Search by name or phone...</string>
+    <string name="filter_all">All</string>
+    <string name="filter_active">Active</string>
+    <string name="filter_expired">Expired</string>
+    <string name="active">Active</string>
+    <string name="expired">Expired</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="no_members_found">No members found</string>
+    <string name="default_zero">0</string>
+
+
+    <!-- PIN -->
+    <string name="enter_pin">Enter PIN</string>
+    <string name="enter_4_digit_pin">Enter your 4-digit PIN</string>
+    <string name="set_new_pin">Set New PIN</string>
+    <string name="confirm_pin">Confirm PIN</string>
+    <string name="change_pin">Change PIN</string>
+    <string name="remove_pin">Remove PIN</string>
+    <string name="old_pin">Old PIN</string>
+    <string name="new_pin">New PIN</string>
+    <string name="enter_old_pin">Enter old PIN</string>
+    <string name="enter_new_pin">Enter new PIN</string>
+    <string name="confirm_new_pin">Confirm new PIN</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="app_preferences_security">App preferences and security</string>
+    <string name="security_settings">Security Settings</string>
+    <string name="currency_settings">Currency Settings</string>
+    <string name="set_pin">Set PIN</string>
+    <string name="pin_not_set">Not Set</string>
+    <string name="pin_active">Active</string>
+    <string name="enter_pin_to_remove">Enter your current PIN to remove security</string>
+
+    <!-- Dialogs -->
+    <string name="delete_member_title">Delete Member?</string>
+    <string name="delete_member_message">Are you sure you want to delete this member? This action cannot be undone.</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="next">Next</string>
+
+    <!-- Messages -->
+    <string name="member_added_success">Member added successfully!</string>
+    <string name="member_updated_success">Member updated successfully!</string>
+    <string name="member_deleted_success">Member deleted successfully</string>
+    <string name="pin_set_success">PIN set successfully</string>
+    <string name="pin_changed_success">PIN changed successfully</string>
+    <string name="pin_removed_success">PIN removed successfully</string>
+    <string name="currency_changed">Currency changed to %s</string>
+    <string name="incorrect_pin">Incorrect PIN</string>
+    <string name="pins_do_not_match">PINs do not match</string>
+    <string name="pin_must_be_4_digits">PIN must be 4 digits</string>
+    <string name="please_enter_name">Please enter full name</string>
+    <string name="please_enter_phone">Please enter phone number</string>
+    <string name="please_enter_fee">Please enter a valid fee amount</string>
+    <string name="required_field">*</string>
+</resources>
