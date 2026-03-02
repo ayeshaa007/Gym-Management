@@ -20,4 +20,4 @@ Gradient Dashboard UI
 
 Fully Offline (SQLite Database)
 
-![Dashboard](dashboard.jpg)
+![Dashboard](Dashboard.jpg)
